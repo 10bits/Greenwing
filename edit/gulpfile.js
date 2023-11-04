@@ -54,4 +54,4 @@ function watch() {
   gulp.watch([paths.scss], gulp.series(clearDist, style, reload));
 }
 
-exports.watch = series(clearDist, style, serve, watch);
+exports.build = series(clearDist, style);
