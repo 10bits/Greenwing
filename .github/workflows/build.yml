@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "16"
           
-      - name: Prepare
+      - name: Build
         run: |
           rm ./dist/*
           cp ./edit/* ./
