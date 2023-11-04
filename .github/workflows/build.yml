@@ -24,7 +24,7 @@ jobs:
           rm package-lock.json yarn.lock
           npm install -g gulp
           npm install
-          npm build
+          gulp
                     
       - name: upload artifact
         uses: actions/upload-artifact@v2
