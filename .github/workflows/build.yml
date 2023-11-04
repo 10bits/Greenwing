@@ -15,15 +15,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "12"
           
       - name: Build
         run: |
           rm ./dist/*
           cp ./edit/* ./
           rm package-lock.json yarn.lock
-          npm install -g node-sass@6.0.1
-          npm rebuild node-sass -g
           npm install -g gulp
           npm install
           npm build
